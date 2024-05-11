@@ -1,4 +1,4 @@
-# TranslationFramework2 - Indoensian Version
+# TranslationFramework2 - Indonesian Version
 Translation Framework 2 adalah sebuah aplikasi untuk memudahkan penerjemahan berbagai permainan.
 
 **PENTING: Aplikasi ini tidak akan menerima pembaruan atau perbaikan bug lebih lanjut. Aplikasi baru adalah [TF3](https://github.com/Kaplas80/TF3).**
