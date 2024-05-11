@@ -3,6 +3,9 @@ Translation Framework 2 adalah sebuah aplikasi untuk memudahkan penerjemahan ber
 
 **PENTING: Aplikasi ini tidak akan menerima pembaruan atau perbaikan bug lebih lanjut. Aplikasi baru adalah [TF3](https://github.com/Kaplas80/TF3).**
 
+## Download
+Jika Anda tidak tahu (atau tidak ingin) mengompilasi dari kode sumber, Anda dapat mengunduh versi yang sudah dikompilasi secara stabil **[Klik Disini](https://drive.google.com/file/d/13XuweJcmPKUET16S65Y8EwLNPJNPCeu7/view?usp=sharing)**
+
 ## Cara Kerjanya?
 Saat membuat terjemahan baru, aplikasi meminta pengguna untuk permainan yang ingin diterjemahkan dan folder tempat permainan tersebut diinstal. Setelah itu, aplikasi mencari dan mengekstrak (jika diperlukan) file teks sehingga pengguna hanya perlu fokus pada penerjemahan.
 
