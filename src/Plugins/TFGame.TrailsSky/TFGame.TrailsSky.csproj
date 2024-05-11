@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CA88990-3B99-4645-B090-5F12791C7A1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TFGame.TrailsSky</RootNamespace>
+    <AssemblyName>TFGame.TrailsSky</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TF.GUI\bin\Debug\plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TF.GUI\bin\Release\plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\TF.GUI\bin\x86\Debug\plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\TF.GUI\bin\x86\Release\plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\TF.GUI\bin\x64\Debug\plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\TF.GUI\bin\x64\Release\plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsmResolver, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AsmResolver.3.0.3\lib\net40-client\AsmResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WinFormsUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\DockPanelSuite.3.1.0-beta7\lib\net40\WinFormsUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\FalcomCompressor.cs" />
+    <Compile Include="Encoding.cs" />
+    <Compile Include="Files\DatFile.cs" />
+    <Compile Include="Files\DT\QuestFile.cs" />
+    <Compile Include="Files\DT\GenericDTFile.cs" />
+    <Compile Include="Files\DT\TownFile.cs" />
+    <Compile Include="Files\DT\TownElement.cs" />
+    <Compile Include="Files\DT\ShopElement.cs" />
+    <Compile Include="Files\DT\ShopFile.cs" />
+    <Compile Include="Files\DT\NameFile.cs" />
+    <Compile Include="Files\DT\MemoFile.cs" />
+    <Compile Include="Files\DT\MagicFile.cs" />
+    <Compile Include="Files\DT\ItemFile.cs" />
+    <Compile Include="Files\DT\ItemElement.cs" />
+    <Compile Include="Files\DT\CookFile.cs" />
+    <Compile Include="Files\DT\BookFile.cs" />
+    <Compile Include="Files\DT\DTElement.cs" />
+    <Compile Include="Files\Exe\CharacterInfo.cs" />
+    <Compile Include="Files\Exe\DX9File.cs" />
+    <Compile Include="Files\Exe\File.cs" />
+    <Compile Include="Files\Exe\FontTableView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Files\Exe\FontTableView.Designer.cs">
+      <DependentUpon>FontTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Files\FONT\File.cs" />
+    <Compile Include="Files\Images\Argb4444ImageFile.cs" />
+    <Compile Include="Files\Images\Argb1555ImageFile.cs" />
+    <Compile Include="Files\Images\ImageType3.cs" />
+    <Compile Include="Files\Images\ImageType8.cs" />
+    <Compile Include="Files\Images\ImageType7.cs" />
+    <Compile Include="Files\Images\ImageType6.cs" />
+    <Compile Include="Files\Images\ImageType5.cs" />
+    <Compile Include="Files\Images\ImageType4.cs" />
+    <Compile Include="Files\Images\ImageType2.cs" />
+    <Compile Include="Files\Images\ImageType1.cs" />
+    <Compile Include="Files\Images\AbstractImageFile.cs" />
+    <Compile Include="Files\MNSNOTE2\Encoding.cs" />
+    <Compile Include="Files\MNSNOTE2\File.cs" />
+    <Compile Include="Files\MSDT\Encoding.cs" />
+    <Compile Include="Files\MSDT\File2.cs" />
+    <Compile Include="Files\MSDT\File.cs" />
+    <Compile Include="Files\SN\File.cs" />
+    <Compile Include="Views\View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExternalLibs\DataGridViewNumericUpDownElements\DataGridViewNumericUpDownElements.csproj">
+      <Project>{82b50731-be90-433f-bb6e-9b509c5f3b7c}</Project>
+      <Name>DataGridViewNumericUpDownElements</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TF.Core\TF.Core.csproj">
+      <Project>{14bb172a-b3d4-4237-82ab-8fef4e9ab8cd}</Project>
+      <Name>TF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TF.IO\TF.IO.csproj">
+      <Project>{4f0d7226-fa20-4fe3-a523-336702654e02}</Project>
+      <Name>TF.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\Exe\FontTableView.resx">
+      <DependentUpon>FontTableView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

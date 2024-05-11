@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <metadata name="tlsMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tlsMain.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsbNewFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbNewFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="tsbNewFile.Text" xml:space="preserve">
+    <value>Baru</value>
+  </data>
+  <data name="tsbOpenFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbOpenFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="tsbOpenFile.Text" xml:space="preserve">
+    <value>Membuka</value>
+  </data>
+  <data name="tsbSaveFile.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsbSaveFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbSaveFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="tsbSaveFile.Text" xml:space="preserve">
+    <value>Simpan</value>
+  </data>
+  <data name="tsbExportProject.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsbExportProject.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbExportProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="tsbExportProject.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="tsbSearch.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsbSearch.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="tsbSearch.Text" xml:space="preserve">
+    <value>Mencari</value>
+  </data>
+  <data name="tsbSearch.ToolTipText" xml:space="preserve">
+    <value>Mencari</value>
+  </data>
+  <data name="tsbSearchInFiles.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsbSearchInFiles.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbSearchInFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="tsbSearchInFiles.Text" xml:space="preserve">
+    <value>Cari di file</value>
+  </data>
+  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripButton1.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="toolStripButton1.Text" xml:space="preserve">
+    <value>Import dss</value>
+  </data>
+  <data name="toolStripButton1.ToolTipText" xml:space="preserve">
+    <value>Import dss</value>
+  </data>
+  <data name="tlsMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tlsMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 0, 0, 0</value>
+  </data>
+  <data name="tlsMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1067, 31</value>
+  </data>
+  <data name="tlsMain.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tlsMain.Name" xml:space="preserve">
+    <value>tlsMain</value>
+  </data>
+  <data name="&gt;&gt;tlsMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlsMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlsMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="tsExtender.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>385, 17</value>
+  </metadata>
+  <data name="dockPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dockPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 59</value>
+  </data>
+  <data name="dockPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="dockPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1067, 495</value>
+  </data>
+  <data name="dockPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dockPanel.Name" xml:space="preserve">
+    <value>dockPanel</value>
+  </data>
+  <data name="&gt;&gt;dockPanel.Type" xml:space="preserve">
+    <value>WeifenLuo.WinFormsUI.Docking.DockPanel, WinFormsUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481</value>
+  </data>
+  <data name="&gt;&gt;dockPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="dockTheme.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>494, 17</value>
+  </metadata>
+  <metadata name="LoadFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>609, 17</value>
+  </metadata>
+  <data name="LoadFileDialog.Filter" xml:space="preserve">
+    <value>Proyek penerjemahan (*.tf)|*.tf</value>
+  </data>
+  <data name="mniFileNew.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="mniFileNew.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+N</value>
+  </data>
+  <data name="mniFileNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="mniFileNew.Text" xml:space="preserve">
+    <value>Baru</value>
+  </data>
+  <data name="mniFileOpen.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="mniFileOpen.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="mniFileOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="mniFileOpen.Text" xml:space="preserve">
+    <value>Membuka</value>
+  </data>
+  <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 6</value>
+  </data>
+  <data name="mniFileSave.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniFileSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="mniFileSave.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="mniFileSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="mniFileSave.Text" xml:space="preserve">
+    <value>Simpan</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 6</value>
+  </data>
+  <data name="mniFileExport.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniFileExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="mniFileExport.Text" xml:space="preserve">
+    <value>Export...</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 6</value>
+  </data>
+  <data name="mniFileExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="mniFileExit.Text" xml:space="preserve">
+    <value>Keluar</value>
+  </data>
+  <data name="mniFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 24</value>
+  </data>
+  <data name="mniFile.Text" xml:space="preserve">
+    <value>Arsip</value>
+  </data>
+  <data name="mniEditSearch.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniEditSearch.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+F</value>
+  </data>
+  <data name="mniEditSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 26</value>
+  </data>
+  <data name="mniEditSearch.Text" xml:space="preserve">
+    <value>Mencari</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 6</value>
+  </data>
+  <data name="mniEditSearchInFiles.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniEditSearchInFiles.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Shift+F</value>
+  </data>
+  <data name="mniEditSearchInFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 26</value>
+  </data>
+  <data name="mniEditSearchInFiles.Text" xml:space="preserve">
+    <value>Cari di file</value>
+  </data>
+  <data name="mniEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 24</value>
+  </data>
+  <data name="mniEdit.Text" xml:space="preserve">
+    <value>Cari</value>
+  </data>
+  <data name="mniHelpAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 26</value>
+  </data>
+  <data name="mniHelpAbout.Text" xml:space="preserve">
+    <value>Tentang...</value>
+  </data>
+  <data name="mniHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 24</value>
+  </data>
+  <data name="mniHelp.Text" xml:space="preserve">
+    <value>Bantuan</value>
+  </data>
+  <metadata name="mnuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mniBulkTextsExport.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniBulkTextsExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 26</value>
+  </data>
+  <data name="mniBulkTextsExport.Text" xml:space="preserve">
+    <value>Expor</value>
+  </data>
+  <data name="mniBulkTextsImport.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniBulkTextsImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 26</value>
+  </data>
+  <data name="mniBulkTextsImport.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="mniBulkTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 26</value>
+  </data>
+  <data name="mniBulkTexts.Text" xml:space="preserve">
+    <value>Teks</value>
+  </data>
+  <data name="mniBulkImagesExport.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniBulkImagesExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 26</value>
+  </data>
+  <data name="mniBulkImagesExport.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="mniBulkImagesImport.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mniBulkImagesImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 26</value>
+  </data>
+  <data name="mniBulkImagesImport.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="mniBulkImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 26</value>
+  </data>
+  <data name="mniBulkImages.Text" xml:space="preserve">
+    <value>Gambar</value>
+  </data>
+  <data name="mniBulk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 24</value>
+  </data>
+  <data name="mniBulk.Text" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="mnuMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mnuMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1067, 28</value>
+  </data>
+  <data name="mnuMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mnuMain.Name" xml:space="preserve">
+    <value>mnuMain</value>
+  </data>
+  <data name="&gt;&gt;mnuMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mnuMain.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="FolderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>766, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>55</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1067, 554</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Translation Framework 2.0 Indonesia Version</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbNewFile.Name" xml:space="preserve">
+    <value>tsbNewFile</value>
+  </data>
+  <data name="&gt;&gt;tsbNewFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbOpenFile.Name" xml:space="preserve">
+    <value>tsbOpenFile</value>
+  </data>
+  <data name="&gt;&gt;tsbOpenFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbSaveFile.Name" xml:space="preserve">
+    <value>tsbSaveFile</value>
+  </data>
+  <data name="&gt;&gt;tsbSaveFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbExportProject.Name" xml:space="preserve">
+    <value>tsbExportProject</value>
+  </data>
+  <data name="&gt;&gt;tsbExportProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbSearch.Name" xml:space="preserve">
+    <value>tsbSearch</value>
+  </data>
+  <data name="&gt;&gt;tsbSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbSearchInFiles.Name" xml:space="preserve">
+    <value>tsbSearchInFiles</value>
+  </data>
+  <data name="&gt;&gt;tsbSearchInFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButton1.Name" xml:space="preserve">
+    <value>toolStripButton1</value>
+  </data>
+  <data name="&gt;&gt;toolStripButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsExtender.Name" xml:space="preserve">
+    <value>tsExtender</value>
+  </data>
+  <data name="&gt;&gt;tsExtender.Type" xml:space="preserve">
+    <value>WeifenLuo.WinFormsUI.Docking.VisualStudioToolStripExtender, WinFormsUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481</value>
+  </data>
+  <data name="&gt;&gt;dockTheme.Name" xml:space="preserve">
+    <value>dockTheme</value>
+  </data>
+  <data name="&gt;&gt;dockTheme.Type" xml:space="preserve">
+    <value>WeifenLuo.WinFormsUI.Docking.VS2015LightTheme, WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481</value>
+  </data>
+  <data name="&gt;&gt;LoadFileDialog.Name" xml:space="preserve">
+    <value>LoadFileDialog</value>
+  </data>
+  <data name="&gt;&gt;LoadFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniFile.Name" xml:space="preserve">
+    <value>mniFile</value>
+  </data>
+  <data name="&gt;&gt;mniFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniFileNew.Name" xml:space="preserve">
+    <value>mniFileNew</value>
+  </data>
+  <data name="&gt;&gt;mniFileNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniFileOpen.Name" xml:space="preserve">
+    <value>mniFileOpen</value>
+  </data>
+  <data name="&gt;&gt;mniFileOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator.Name" xml:space="preserve">
+    <value>toolStripSeparator</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniFileSave.Name" xml:space="preserve">
+    <value>mniFileSave</value>
+  </data>
+  <data name="&gt;&gt;mniFileSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniFileExport.Name" xml:space="preserve">
+    <value>mniFileExport</value>
+  </data>
+  <data name="&gt;&gt;mniFileExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
+    <value>toolStripSeparator5</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniFileExit.Name" xml:space="preserve">
+    <value>mniFileExit</value>
+  </data>
+  <data name="&gt;&gt;mniFileExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniEdit.Name" xml:space="preserve">
+    <value>mniEdit</value>
+  </data>
+  <data name="&gt;&gt;mniEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniEditSearch.Name" xml:space="preserve">
+    <value>mniEditSearch</value>
+  </data>
+  <data name="&gt;&gt;mniEditSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniEditSearchInFiles.Name" xml:space="preserve">
+    <value>mniEditSearchInFiles</value>
+  </data>
+  <data name="&gt;&gt;mniEditSearchInFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniHelp.Name" xml:space="preserve">
+    <value>mniHelp</value>
+  </data>
+  <data name="&gt;&gt;mniHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniHelpAbout.Name" xml:space="preserve">
+    <value>mniHelpAbout</value>
+  </data>
+  <data name="&gt;&gt;mniHelpAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulk.Name" xml:space="preserve">
+    <value>mniBulk</value>
+  </data>
+  <data name="&gt;&gt;mniBulk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulkTexts.Name" xml:space="preserve">
+    <value>mniBulkTexts</value>
+  </data>
+  <data name="&gt;&gt;mniBulkTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulkTextsExport.Name" xml:space="preserve">
+    <value>mniBulkTextsExport</value>
+  </data>
+  <data name="&gt;&gt;mniBulkTextsExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulkTextsImport.Name" xml:space="preserve">
+    <value>mniBulkTextsImport</value>
+  </data>
+  <data name="&gt;&gt;mniBulkTextsImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulkImages.Name" xml:space="preserve">
+    <value>mniBulkImages</value>
+  </data>
+  <data name="&gt;&gt;mniBulkImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulkImagesExport.Name" xml:space="preserve">
+    <value>mniBulkImagesExport</value>
+  </data>
+  <data name="&gt;&gt;mniBulkImagesExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mniBulkImagesImport.Name" xml:space="preserve">
+    <value>mniBulkImagesImport</value>
+  </data>
+  <data name="&gt;&gt;mniBulkImagesImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialog.Name" xml:space="preserve">
+    <value>FolderBrowserDialog</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

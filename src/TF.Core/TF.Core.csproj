@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Vortice.Direct3D11.1.9.87\build\netstandard2.0\Vortice.Direct3D11.props" Condition="Exists('..\packages\Vortice.Direct3D11.1.9.87\build\netstandard2.0\Vortice.Direct3D11.props')" />
+  <Import Project="..\packages\Vortice.DXGI.1.9.87\build\netstandard2.0\Vortice.DXGI.props" Condition="Exists('..\packages\Vortice.DXGI.1.9.87\build\netstandard2.0\Vortice.DXGI.props')" />
+  <Import Project="..\packages\Vortice.DirectX.1.9.87\build\netstandard2.0\Vortice.DirectX.props" Condition="Exists('..\packages\Vortice.DirectX.1.9.87\build\netstandard2.0\Vortice.DirectX.props')" />
+  <Import Project="..\packages\SharpGen.Runtime.COM.2.0.0-beta.9\build\net45\SharpGen.Runtime.COM.props" Condition="Exists('..\packages\SharpGen.Runtime.COM.2.0.0-beta.9\build\net45\SharpGen.Runtime.COM.props')" />
+  <Import Project="..\packages\SharpGen.Runtime.2.0.0-beta.9\build\SharpGen.Runtime.props" Condition="Exists('..\packages\SharpGen.Runtime.2.0.0-beta.9\build\SharpGen.Runtime.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14BB172A-B3D4-4237-82AB-8FEF4E9AB8CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TF.Core</RootNamespace>
+    <AssemblyName>TF.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Be.Windows.Forms.HexBox, Version=1.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Be.Windows.Forms.HexBox.1.6.1\lib\net40\Be.Windows.Forms.HexBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyotek.Windows.Forms.ImageBox, Version=1.2.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyotekImageBox.1.3.0-Alpha1\lib\net20\Cyotek.Windows.Forms.ImageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectXTexNet, Version=1.0.1.0, Culture=neutral, PublicKeyToken=67e4f5ed452a4f5d, processorArchitecture=MSIL">
+      <HintPath>..\packages\DirectXTexNet.1.0.1\lib\netstandard2.0\DirectXTexNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.9.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.9.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.3.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.3.6\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="NeoSmart.StreamCompare, Version=0.1.5.0, Culture=neutral, PublicKeyToken=df6c018cd9850185, processorArchitecture=MSIL">
+      <HintPath>..\packages\StreamCompare.0.1.5\lib\netstandard2.0\NeoSmart.StreamCompare.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.AsyncEx.Tasks.5.0.0\lib\netstandard2.0\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Disposables, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.Disposables.2.0.0\lib\netstandard2.0\Nito.Disposables.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGen.Runtime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a7c0d43f556c6402, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpGen.Runtime.2.0.0-beta.9\lib\net471\SharpGen.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGen.Runtime.COM, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a7c0d43f556c6402, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpGen.Runtime.COM.2.0.0-beta.9\lib\net45\SharpGen.Runtime.COM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Composition.AttributedModel, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.AttributedModel.5.0.0\lib\net461\System.Composition.AttributedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Convention.5.0.0\lib\net461\System.Composition.Convention.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Hosting.5.0.0\lib\net461\System.Composition.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Runtime.5.0.0\lib\net461\System.Composition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.TypedParts.5.0.0\lib\net461\System.Composition.TypedParts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.5.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Vortice.Direct3D11, Version=1.9.0.0, Culture=neutral, PublicKeyToken=5431ec61a7e925da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vortice.Direct3D11.1.9.87\lib\netstandard2.0\Vortice.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.DirectX, Version=1.9.0.0, Culture=neutral, PublicKeyToken=5431ec61a7e925da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vortice.DirectX.1.9.87\lib\netstandard2.0\Vortice.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.DXGI, Version=1.9.0.0, Culture=neutral, PublicKeyToken=5431ec61a7e925da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vortice.DXGI.1.9.87\lib\netstandard2.0\Vortice.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.Mathematics, Version=1.3.21.0, Culture=neutral, PublicKeyToken=5431ec61a7e925da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vortice.Mathematics.1.3.21\lib\netstandard2.0\Vortice.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.1.0-beta7\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WinFormsUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.1.0-beta7\lib\net40\WinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Yarhl, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Yarhl.3.1.0\lib\netstandard2.0\Yarhl.dll</HintPath>
+    </Reference>
+    <Reference Include="Yarhl.Media, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Yarhl.Media.3.1.0\lib\netstandard2.0\Yarhl.Media.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\GameFileContainerSearch.cs" />
+    <Compile Include="Entities\GameFileSearch.cs" />
+    <Compile Include="Entities\GameFileContainer.cs" />
+    <Compile Include="Entities\IGame.cs" />
+    <Compile Include="Entities\TranslationFile.cs" />
+    <Compile Include="Entities\TranslationFileContainer.cs" />
+    <Compile Include="Exceptions\UserCancelException.cs" />
+    <Compile Include="Files\BinaryFile.cs" />
+    <Compile Include="Files\BinaryTextFileWithIds.cs" />
+    <Compile Include="Files\BinaryTextFileWithOffsetTable.cs" />
+    <Compile Include="Files\DDS2File.cs" />
+    <Compile Include="Files\ImageFile.cs" />
+    <Compile Include="Files\TextFile.cs" />
+    <Compile Include="Files\DDSFile.cs" />
+    <Compile Include="Files\BinaryTextFile.cs" />
+    <Compile Include="Files\TrueTypeFontFile.cs" />
+    <Compile Include="Fonts\FontCollection.cs" />
+    <Compile Include="Helpers\AutomaticTranslationHelper.cs" />
+    <Compile Include="POCO\LineEnding.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TranslationEntities\FixedLengthSubtitle.cs" />
+    <Compile Include="Views\GridViewWithId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranslationEntities\PlainText.cs" />
+    <Compile Include="TranslationEntities\Subtitle.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="TranslationEntities\SubtitleWithId.cs" />
+    <Compile Include="Views\FontView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FontView.Designer.cs">
+      <DependentUpon>FontView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BinaryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BinaryView.Designer.cs">
+      <DependentUpon>BinaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ImageView.Designer.cs">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\PathHelper.cs" />
+    <Compile Include="Helpers\SearchHelper.cs" />
+    <Compile Include="Helpers\TypeHelper.cs" />
+    <Compile Include="PluginManager.cs" />
+    <Compile Include="POCO\ExportOptions.cs" />
+    <Compile Include="TranslationProject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\GridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GridView.Designer.cs">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TextView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TextView.Designer.cs">
+      <DependentUpon>TextView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\NotoSansCJKjp.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FontView.resx">
+      <DependentUpon>FontView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BinaryView.resx">
+      <DependentUpon>BinaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ImageView.resx">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GridView.resx">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TextView.resx">
+      <DependentUpon>TextView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TF.IO\TF.IO.csproj">
+      <Project>{4f0d7226-fa20-4fe3-a523-336702654e02}</Project>
+      <Name>TF.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SharpGen.Runtime.2.0.0-beta.9\build\SharpGen.Runtime.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SharpGen.Runtime.2.0.0-beta.9\build\SharpGen.Runtime.props'))" />
+    <Error Condition="!Exists('..\packages\SharpGen.Runtime.COM.2.0.0-beta.9\build\net45\SharpGen.Runtime.COM.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SharpGen.Runtime.COM.2.0.0-beta.9\build\net45\SharpGen.Runtime.COM.props'))" />
+    <Error Condition="!Exists('..\packages\Vortice.DirectX.1.9.87\build\netstandard2.0\Vortice.DirectX.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Vortice.DirectX.1.9.87\build\netstandard2.0\Vortice.DirectX.props'))" />
+    <Error Condition="!Exists('..\packages\Vortice.DXGI.1.9.87\build\netstandard2.0\Vortice.DXGI.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Vortice.DXGI.1.9.87\build\netstandard2.0\Vortice.DXGI.props'))" />
+    <Error Condition="!Exists('..\packages\Vortice.Direct3D11.1.9.87\build\netstandard2.0\Vortice.Direct3D11.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Vortice.Direct3D11.1.9.87\build\netstandard2.0\Vortice.Direct3D11.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>
